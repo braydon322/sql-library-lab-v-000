@@ -1,18 +1,30 @@
 def select_books_titles_and_years_in_first_series_order_by_year
-  "SELECT title, year FROM books GROUP BY id ORDER BY year ASC LIMIT 3;"
+  "SELECT title, year 
+  FROM books 
+  GROUP BY id 
+  ORDER BY year ASC 
+  LIMIT 3;"
 end
 
 def select_name_and_motto_of_char_with_longest_motto
-  "SELECT name, motto AS length_of_motto FROM characters ORDER BY length(motto) DESC LIMIT 1;"
+  "SELECT name, motto 
+  AS length_of_motto 
+  FROM characters 
+  ORDER BY length(motto) DESC 
+  LIMIT 1;"
 end
 
 def select_value_and_count_of_most_prolific_species
-  "SELECT species, count(species) as species_count FROM characters GROUP BY species ORDER BY species_count DESC LIMIT 1;"
+  "SELECT species, count(species)
+   AS species_count 
+   FROM characters 
+   GROUP BY species 
+   ORDER BY species_count DESC 
+   LIMIT 1;"
 end
 
 def select_name_and_series_subgenres_of_authors
 
-  # #BOOK & SERIES
    "SELECT authors.name, subgenres.name
    FROM books
    INNER JOIN series
@@ -22,12 +34,6 @@ def select_name_and_series_subgenres_of_authors
    INNER JOIN subgenres
    ON series.subgenre_id = subgenres.id
    GROUP BY authors.name;"
-  #
-  # # #SUBGENRES
-  #  SELECT book_and_series.name, subgenres.name
-  #  FROM book_and_series
-  #  INNER JOIN subgenres
-  #  GROUP BY name;
 
 end
 
