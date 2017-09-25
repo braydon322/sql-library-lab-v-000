@@ -6,7 +6,6 @@ def select_name_and_motto_of_char_with_longest_motto
   "SELECT name, motto AS length_of_motto FROM characters ORDER BY length(motto) DESC LIMIT 1;"
 end
 
-
 def select_value_and_count_of_most_prolific_species
   #WORKING ON THIS ONE
   "Write your SQL query here"
