@@ -7,7 +7,7 @@ def select_name_and_motto_of_char_with_longest_motto
 end
 
 def select_value_and_count_of_most_prolific_species
-  "SELECT SUM(), count() FROM characters;"
+  "SELECT species FROM characters;"
 end
 
 def select_name_and_series_subgenres_of_authors
