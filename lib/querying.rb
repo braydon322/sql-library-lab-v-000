@@ -13,7 +13,7 @@ end
 def select_name_and_series_subgenres_of_authors
 
   # #BOOK & SERIES
-   "SELECT book_and_series.name, subgenres.name
+   "SELECT books.title, subgenres.name
    FROM books
    INNER JOIN series
    ON books.series_id = series.id
