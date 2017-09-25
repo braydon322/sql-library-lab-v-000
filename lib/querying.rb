@@ -20,7 +20,7 @@ def select_name_and_series_subgenres_of_authors
    INNER JOIN authors
    ON authors.id = series.author_id
    INNER JOIN subgenres
-   GROUP BY books.title;"
+   GROUP BY authors.name;"
   #
   # # #SUBGENRES
   #  SELECT book_and_series.name, subgenres.name
