@@ -3,9 +3,7 @@ def select_books_titles_and_years_in_first_series_order_by_year
 end
 
 def select_name_and_motto_of_char_with_longest_motto
-  #WORKING ON THIS ONE
   "SELECT name, motto FROM authors INNER JOIN characters ON characters.author_id = authors.id;"
-  # "SELECT name, COUNT(book_id) AS count_value FROM characters INNER JOIN character_books ON character_books.character_id = characters.id GROUP BY name ORDER BY count_value DESC;"
 end
 
 
