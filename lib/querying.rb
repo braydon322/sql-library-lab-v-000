@@ -13,12 +13,12 @@ end
 def select_name_and_series_subgenres_of_authors
 
   # #BOOK & SERIES
-   SELECT book_and_series.name, subgenres.name
+   "SELECT book_and_series.name, subgenres.name
    FROM books
    INNER JOIN series
    ON books.series_id = series.id
    INNER JOIN subgenres
-   GROUP BY books.title;
+   GROUP BY books.title;"
   #
   # # #SUBGENRES
   #  SELECT book_and_series.name, subgenres.name
