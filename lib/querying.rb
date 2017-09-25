@@ -4,7 +4,8 @@ end
 
 def select_name_and_motto_of_char_with_longest_motto
   #WORKING ON THIS ONE
-  "Write your SQL query here"
+  "SELECT name FROM authors"
+  # "SELECT name, COUNT(book_id) AS count_value FROM characters INNER JOIN character_books ON character_books.character_id = characters.id GROUP BY name ORDER BY count_value DESC;"
 end
 
 
