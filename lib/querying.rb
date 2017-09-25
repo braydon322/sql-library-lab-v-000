@@ -12,6 +12,7 @@ end
 
 def select_name_and_series_subgenres_of_authors
 
+  # #SERIES
   "SELECT series.title FROM books INNER JOIN series ON books.series_id = series.id GROUP BY books.title;"
   #
   # #AUTHORS
